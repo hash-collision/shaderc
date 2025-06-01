@@ -206,9 +206,9 @@ bool SetResourceLimits(const std::string& str, shaderc::CompileOptions* options,
   return true;
 }
 
-const char kBuildVersion[] =
+const char* kBuildVersion[] {
 #include "build-version.inc"
-    ;
+    };
 
 // Gets an optional stage name followed by required offset argument.  Returns
 // false and emits a message to *errs if any errors occur.  After calling this
